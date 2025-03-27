@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <h3 className="text-xl font-serif font-bold text-[#c09569] mb-4">Chapters Book Club</h3>
             <p className="text-stone-300 mb-4">
-              AASTU's premier literary community fostering meaningful discussions and connections through shared reading experiences.
+              AASTU&apos;s premier literary community fostering meaningful discussions and connections through shared reading experiences.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-stone-300 hover:text-[#c09569] transition-colors">

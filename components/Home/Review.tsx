@@ -1,10 +1,10 @@
 "use client";
-
-import React, { useState } from 'react'
-import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import React, { useState } from 'react';
+import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import Image from 'next/image';
 
 const Review = () => {
-  const [currentSlide, setCurrentSlide] = useState(0)
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const stories = [
     {
@@ -25,15 +25,15 @@ const Review = () => {
       quote: "The diverse book selections have expanded my worldview and given me fresh perspectives to share with my students. A truly enriching experience.",
       avatar: "/images/c3.jpeg"
     }
-  ]
+  ];
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev === stories.length - 1 ? 0 : prev + 1))
-  }
+    setCurrentSlide((prev) => (prev === stories.length - 1 ? 0 : prev + 1));
+  };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? stories.length - 1 : prev - 1))
-  }
+    setCurrentSlide((prev) => (prev === 0 ? stories.length - 1 : prev - 1));
+  };
 
   return (
     <div id="review" className="bg-stone-50 py-16 px-6">
@@ -53,12 +53,13 @@ const Review = () => {
           {/* Testimonial Card */}
           <div className="bg-white p-8 md:p-10 rounded-xl shadow-lg border border-stone-200">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              {/* Avatar */}
-              <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-[#c09569]">
-                <img 
+              {/* Avatar - Using Next.js Image component */}
+              <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-[#c09569] relative">
+                <Image 
                   src={stories[currentSlide].avatar} 
                   alt={stories[currentSlide].name}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               
@@ -66,7 +67,7 @@ const Review = () => {
               <div className="flex-1">
                 <FaQuoteLeft className="text-[#c09569] text-2xl mb-4" />
                 <p className="text-stone-700 text-lg italic mb-6">
-                  "{stories[currentSlide].quote}"
+                  &ldquo;{stories[currentSlide].quote}&rdquo;
                 </p>
                 <div>
                   <h3 className="text-xl font-serif font-semibold text-stone-800">
@@ -107,7 +108,7 @@ const Review = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Review
+export default Review;

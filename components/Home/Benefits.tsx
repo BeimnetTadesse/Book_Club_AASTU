@@ -44,7 +44,7 @@ const Benefits = () => {
             Why Join Our Book Club?
           </h1>
           <p className="text-xl text-stone-600 max-w-3xl mx-auto">
-            Discover what makes Chapters AASTU's most engaging literary community
+            Discover what makes Chapters AASTU&apos;s most engaging literary community
           </p>
         </div>
 

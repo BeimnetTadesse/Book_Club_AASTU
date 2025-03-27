@@ -16,7 +16,7 @@ const Hero = () => {
           Discover Your Next Read
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl text-amber-100 text-center font-medium">
-        Where stories come alive through shared reading
+          Where stories come alive through shared reading
         </p>
         <button className="px-8 py-3 bg-[#c09569] hover:bg-[#a3672b] rounded-lg text-lg text-white transition-colors shadow-lg">
           Join Us

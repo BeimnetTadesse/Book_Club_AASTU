@@ -12,7 +12,7 @@ const AboutUs = () => {
             About Chapters Book Club
           </h2>
           <p className="text-stone-600 text-lg max-w-3xl mx-auto">
-            We're a community of passionate readers who gather weekly to explore
+            We&apos;re a community of passionate readers who gather weekly to explore
             thought-provoking books and engage in lively discussions.
           </p>
         </div>

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image';
 
 const RecentReads = () => {
   return (
@@ -14,7 +15,7 @@ const RecentReads = () => {
           </p>
         </div>
 
-        {/* Books Grid - Responsive Columns with Wider Boxes */}
+        {/* Books Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {[
             {
@@ -43,12 +44,13 @@ const RecentReads = () => {
               key={index} 
               className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all border border-stone-200 flex flex-col"
             >
-              {/* Improved Book Cover Display */}
-              <div className="h-96 p-4 flex items-center justify-center bg-stone-100">
-                <img 
+              {/* Book Cover - Using Next.js Image component */}
+              <div className="h-96 p-4 flex items-center justify-center bg-stone-100 relative">
+                <Image 
                   src={book.image} 
                   alt={book.title}
-                  className="h-full w-full object-cover rounded-lg shadow-lg"
+                  fill
+                  className="object-cover rounded-lg shadow-lg"
                 />
               </div>
               
@@ -82,7 +84,7 @@ const RecentReads = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default RecentReads
+export default RecentReads;

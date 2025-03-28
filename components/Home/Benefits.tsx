@@ -36,7 +36,7 @@ const Benefits = () => {
   };
 
   return (
-    <div  id="benefit" className="min-h-screen bg-stone-50 pt-16 pb-16">
+    <div className="min-h-screen bg-stone-50 pt-16 pb-16">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -49,7 +49,7 @@ const Benefits = () => {
         </div>
 
         {/* Benefits Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div  id="benefit" className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             {
               title: "Thoughtful Discussions",

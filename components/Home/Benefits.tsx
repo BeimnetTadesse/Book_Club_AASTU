@@ -104,12 +104,6 @@ const Benefits = () => {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="text-center mt-16">
-          <button className="px-8 py-3 bg-[#c09569] hover:bg-[#a3672b] rounded-lg text-lg text-white transition-colors shadow-md">
-            Join Our Next Meeting →
-          </button>
-        </div>
       </div>
     </div>
   )

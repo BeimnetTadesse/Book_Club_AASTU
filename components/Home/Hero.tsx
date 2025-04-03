@@ -1,6 +1,11 @@
+"use client";
 import React from 'react'
 
 const Hero = () => {
+   const handleJoinClick = () => {
+    // Redirect to your Telegram channel
+    window.open('https://t.me/ccbo23', '_blank');
+  };
   return (
     <div id="home" className="relative w-full h-screen">
       {/* Background Image with overlay */}
@@ -18,7 +23,7 @@ const Hero = () => {
         <p className="text-xl md:text-2xl mb-8 max-w-2xl text-amber-100 text-center font-medium">
           Where stories come alive through shared reading
         </p>
-        <button className="px-8 py-3 bg-[#c09569] hover:bg-[#a3672b] rounded-lg text-lg text-white transition-colors shadow-lg">
+        <button onClick={handleJoinClick} className="px-8 py-3 bg-[#c09569] hover:bg-[#a3672b] rounded-lg text-lg text-white transition-colors shadow-lg">
           Join Us
         </button>
       </div>

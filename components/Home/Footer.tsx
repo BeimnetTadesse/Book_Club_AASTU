@@ -57,7 +57,7 @@ const Footer = () => {
           <div className="md:col-span-1 flex justify-center">
             <div>
               <h4 className="text-lg font-serif font-semibold text-[#c09569] mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-center">
+              <ul className="space-y-2">
                 <li><a href="#" className="text-stone-300 hover:text-white transition-colors">Upcoming Reads</a></li>
                 <li><a href="#" className="text-stone-300 hover:text-white transition-colors">Past Discussions</a></li>
                 <li><a href="#" className="text-stone-300 hover:text-white transition-colors">Join Our Club</a></li>

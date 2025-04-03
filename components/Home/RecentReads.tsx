@@ -1,7 +1,12 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
 
 const RecentReads = () => {
+  const handleExploreBooks = () => {
+    // Redirect to your TikTok page
+    window.open('https://www.tiktok.com/@chapterschats?_t=8qhon1yT0nm&_r=1', '_blank');
+  };
   return (
     <div className="min-h-screen bg-stone-50 py-16">
       <div className="max-w-5xl mx-auto px-6">
@@ -78,7 +83,7 @@ const RecentReads = () => {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <button className="px-8 py-3 bg-[#c09569] hover:bg-[#a3672b] rounded-lg text-lg text-white transition-colors shadow-md">
+          <button onClick={handleExploreBooks} className="px-8 py-3 bg-[#c09569] hover:bg-[#a3672b] rounded-lg text-lg text-white transition-colors shadow-md">
             Explore More Books →
           </button>
         </div>

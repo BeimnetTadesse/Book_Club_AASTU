@@ -46,8 +46,8 @@ const Footer = () => {
             <ul className="space-y-2 text-stone-300">
               <li>AASTU Campus</li>
               <li>Addis Ababa, Ethiopia</li>
-              <li>chapters@aastu.edu</li>
-              <li>+251 123 456 789</li>
+              <li>chapterswithchats@gmail.com</li>
+
             </ul>
           </div>
         </div>
@@ -58,6 +58,15 @@ const Footer = () => {
         {/* Copyright */}
         <div className="text-center text-stone-400 text-sm">
           <p>© {new Date().getFullYear()} Chapters and Chats Book Club AASTU. All rights reserved.</p>
+          <p className="mt-2 ">
+            Website created by{' '}
+            <a 
+              href="mailto:beimnetasnin@example.com" 
+              className="hover:text-[#c09569] text-[#c09569] transition-colors"
+            >
+             Beimnet Tadesse
+            </a>
+          </p>
         </div>
       </div>
     </footer>

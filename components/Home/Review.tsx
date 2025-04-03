@@ -8,19 +8,19 @@ const Review = () => {
 
   const stories = [
     {
-      name: "Jason Doe",
+      name: "Ruth Abraham",
       role: "Student",
       quote: "Joining Chapters transformed my reading habits. The thoughtful discussions helped me appreciate literature in ways I never imagined possible.",
       avatar: "/images/c1.jpg"
     },
     {
-      name: "Jacky Doe",
+      name: "John David",
       role: "Student",
       quote: "As someone with a busy schedule, the book club's flexible meetings and engaging selections keep me reading regularly. It's my favorite monthly activity!",
       avatar: "/images/c2.jpg"
     },
     {
-      name: "John Doe",
+      name: "Sarah Isaac",
       role: "Student",
       quote: "The diverse book selections have expanded my worldview and given me fresh perspectives to share with my students. A truly enriching experience.",
       avatar: "/images/c3.jpeg"

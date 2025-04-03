@@ -1,5 +1,7 @@
 import React from 'react'
-import { FaFacebook, FaTwitter, FaInstagram, FaEnvelope } from 'react-icons/fa'
+import { FaInstagram, FaEnvelope } from 'react-icons/fa'
+import { FaTelegram } from 'react-icons/fa'
+import { SiTiktok } from 'react-icons/si'
 
 const Footer = () => {
   return (
@@ -13,19 +15,42 @@ const Footer = () => {
             <p className="text-stone-300 mb-4">
               AASTU&apos;s premier literary community fostering meaningful discussions and connections through shared reading experiences.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-stone-300 hover:text-[#c09569] transition-colors">
-                <FaFacebook size={20} />
-              </a>
-              <a href="#" className="text-stone-300 hover:text-[#c09569] transition-colors">
-                <FaTwitter size={20} />
-              </a>
-              <a href="#" className="text-stone-300 hover:text-[#c09569] transition-colors">
+             <div className="flex space-x-4">
+              <a 
+                href="https://www.instagram.com/chaptersandchats/profilecard/?igsh=YTJ1Zzl2cnk5aDVm" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-stone-300 hover:text-[#c09569] transition-colors"
+                aria-label="Instagram"
+              >
                 <FaInstagram size={20} />
               </a>
-              <a href="#" className="text-stone-300 hover:text-[#c09569] transition-colors">
+              <a 
+                href="https://www.tiktok.com/@chapterschats?_t=8qhon1yT0nm&_r=1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-stone-300 hover:text-[#c09569] transition-colors"
+                aria-label="TikTok"
+              >
+                <SiTiktok size={20} />
+              </a>
+              <a 
+                href="https://t.me/ccbo23" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-stone-300 hover:text-[#c09569] transition-colors"
+                aria-label="Telegram"
+              >
+                <FaTelegram size={20} />
+              </a>
+              <a 
+                href="mailto:chapterswithchats@gmail.com" 
+                className="text-stone-300 hover:text-[#c09569] transition-colors"
+                aria-label="Email"
+              >
                 <FaEnvelope size={20} />
               </a>
+            </div>
             </div>
           </div>
 

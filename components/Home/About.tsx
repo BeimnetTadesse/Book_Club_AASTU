@@ -1,6 +1,11 @@
+"use client";
 import React from 'react'
 
 const AboutUs = () => {
+    const handleJoinClick = () => {
+    // Redirect to your Telegram channel
+    window.open('https://t.me/ccbo23', '_blank');
+  };
   return (
     <div id="about" className="min-h-screen bg-stone-50">
 
@@ -63,7 +68,7 @@ const AboutUs = () => {
 
         {/* CTA */}
         <div className="text-center mt-16">
-          <button className="px-8 py-3 bg-[#c09569] hover:bg-[#a3672b] rounded-lg text-lg text-white transition-colors shadow-md">
+          <button onClick={handleJoinClick} className="px-8 py-3 bg-[#c09569] hover:bg-[#a3672b] rounded-lg text-lg text-white transition-colors shadow-md">
             Join Our Next Discussion →
           </button>
         </div>
